@@ -1,0 +1,60 @@
+# The URL the site will be built for
+base_url = "https://coolex.info"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+generate_sitemap = true
+generate_robots_txt = true
+theme = "linkita"
+
+#default_language = "cn"
+author = "babydragon"
+
+[[taxonomies]]
+name = "categories"
+feed = true
+paginate_by = 5
+
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 5
+
+[[taxonomies]]
+name = "authors"
+feed = true
+paginate_by = 5
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+header_menu_name = "global"
+
+[extra.profiles.babydragon]
+avatar_url = "icons/babydragon.png"
+name = "babydragon"
+bio = "码农"
+social = [
+    { name = "github", url = "https://github.com/babydragon" },
+    { name = "X", url = "https://x.com/jlj_babydragon" },
+    { name = "rss", url = "$BASE_URL/atom.xml" },
+]
+
+[extra.menus]
+global = [
+    { url = "$BASE_URL/pages/archive/", name = "归档" },
+    { url = "$BASE_URL/categories", name = "分类" },
+    { url = "$BASE_URL/tags/", name = "标签" },
+    { url = "$BASE_URL/pages/about/", name = "About" },
+]
+
+[extra.footer]
+license_url = "https://creativecommons.org/licenses/by-nc/4.0/deed"
+copyright = "&copy; $YEAR babydragon &vert; [CC BY-NC 4.0]($LICENSE_URL)"
