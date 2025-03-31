@@ -52,7 +52,6 @@ global = [
     { url = "$BASE_URL/pages/archive/", name = "归档" },
     { url = "$BASE_URL/categories", name = "分类" },
     { url = "$BASE_URL/tags/", name = "标签" },
-    { url = "$BASE_URL/pages/about/", name = "About" },
 ]
 
 [extra.footer]
