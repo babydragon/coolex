@@ -1,6 +1,5 @@
 +++
 title = "阿里云函数计算Rust"
-description = "helm状态手工修改，当helm命令执行导致状态不一致时，可以手工修改状态"
 date = "2025-03-31"
 [taxonomies]
 tags = ["function", "阿里云"]
@@ -9,6 +8,7 @@ categories = ["Rust"]
 
 阿里云函数计算的SDK是没有Rust版本的，但是可以通过自定义运行时来直接运行Rust代码。
 第一次尝试使用阿里云函数计算实现从OSS下载前端工程，通过函数进行构建后，将构建产物重新上传到OSS，并且通过CDN进行分发。
+<!-- more -->
 
 ## 准备工作
 阿里云函数计算实际还是通过http请求来调用的，因此，我们需要一个http server来接收请求。
